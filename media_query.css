@@ -1,0 +1,167 @@
+@media screen and (max-width: 1076px){
+    .leftimg img{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 991px){
+    .navtoggle{
+        display: block;
+        font-size: 25px;
+    }
+    .navlist i{
+        display: block;
+        font-size: 25px;
+    }
+    .navlist ul{
+        background: #262626;
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        right: -40%;
+        width: 40%;
+        height: 100vh;
+        padding: 50px;
+        align-items: start;
+    }
+    .header{
+        height: 58vh;
+    }
+    a{
+        font-size: 15px;
+    }
+    li{
+        font-size: 15px;
+    }
+     
+}
+@media screen and (max-width: 770px){
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    i{
+        font-size: 20px;
+    }
+    .header span{
+        font-size: 30px;
+    }
+    .header h2{
+        font-size: 20px;
+    }
+    .header{
+        height: 45vh;
+    }
+    .headtext{
+        padding-bottom: 20px;
+    }
+    .projects{
+        gap: 15px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h5{
+        font-size: 15px;
+        padding-block: 5px 30px;
+    }
+    .projects
+    .projectscard i{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 650px){
+    /* h1{
+        font-size: 20px;
+    } */
+    p{
+        font-size: 12px;
+    }
+    i{
+        font-size: 15px;
+    }
+    a{
+        font-size: 10px;
+    }
+    li{
+        font-size: 12px;
+    }
+    .navlist i{
+        font-size: 15px;
+    }
+    .header span{
+        font-size: 20px;
+    }
+    .header h2{
+        font-size: 15px;
+    }
+    .elementlist{
+        font-size: 11px;
+    }
+    .leftimg img{
+        width: 250px;
+    }
+    .aboutlist{
+        gap: 15px;
+    }
+    .about{
+        min-height: 380px;
+    }
+    .projects{
+        padding: 0px 30px;
+        flex-direction: column;
+    }
+    .projectscard{
+        width: 100%;
+        min-height: 0px;
+    }
+    .cardtext{
+        width: 100%;
+    }
+    .contactleft i{
+        font-size: 15px;
+    }
+    .contactleft h1{
+        font-size: 30px;
+    }
+    .resume{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 430px){
+    .header{
+        align-items: end;
+    }
+    .header p{
+        padding-bottom: 30px;
+    }
+    .about{
+        flex-direction: column-reverse;
+        gap: 0px;
+        align-items: center;
+        padding: 30px 20px;
+    }
+    .righttext{
+        min-height: 290px;
+    }
+    .leftimg img{
+        margin-top: 0px;
+    }
+    .projects{
+        padding: 0px 30px;
+    }
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 35px;
+    }
+    .contactleft{
+        gap: 10px;
+    }
+    .contactright input,textarea{
+        margin-block: 10px;
+    }
+
+}

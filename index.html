@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankan's Website</title>
+    <link rel="stylesheet" href="portfolio_style.css">
+    <link rel="stylesheet" href="media_query.css">
+    <script src="https://kit.fontawesome.com/1f9d987c5d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!----------NavBar Section---------->
+    <section id="home">
+        <div class="navbar container flex">
+            <a herf="#" class="logo">
+                <h1><span>A</span>nkan<span>.</span></h1>
+            </a>
+            <div class="navlist">
+                <ul class="flex" id="sidemenu">
+                    <a class="element"><i class="fa-solid fa-xmark" onclick="closemenu()"></i></a>
+                    <li><a href="#home" class="element">Home</a></li>
+                    <li><a href="#aboutme" class="element">About Me</a></li>
+                    <li><a href="#projects" class="element">My Work</a></li>
+                    <li><a href="#contact" class="element">Contact</a></li>
+                </ul>
+            </div>
+            <a class="navtoggle element">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </a>
+        </div>
+    </section>
+
+    <!----------Header Section---------->
+    <div class=" container header flex">
+        <div>
+            <h2>Hi I am <span>Ankan</span><br> Chattopadhyay, from West Bengal</h2>
+            <p>Web developer/Software Engineer</p>
+        </div>
+    </div>
+
+    <!----------About Me Section---------->
+    <section id="aboutme">
+        <div class="container about  flex">
+            <div class="leftimg flex">
+                <img src="Documents/asset 4.jpg" alt="my image">
+            </div>
+            <div class="righttext">
+                <h1>About <span>Me</span></h1>
+                <p>Seeking a challenging role at a reputed organization to utilize my skills that can contribute to the
+                    company’s growth as well as enhance my knowledge by exploring new things.</p>
+                <ul class="aboutlist flex">
+                    <li><a href="#aboutme" class="aboutelement activelink" onclick="opentab('details')">Details</a></li>
+                    <li><a href="#aboutme" class="aboutelement" onclick="opentab('education')">Education</a>
+                    </li>
+                    <li><a href="#aboutme" class="aboutelement" onclick="opentab('skills')">Skills</a></li>
+                    <li><a href="#aboutme" class="aboutelement" onclick="opentab('languages')">Languages</a></li>
+                    <li><a href="#aboutme" class="aboutelement" onclick="opentab('hobbies')">Hobbies</a></li>
+                </ul>
+                <div class="elementdetails activetab" id="details">
+                    <ul>
+                        <li><span>Name -</span> Ankan Chattopadhyay</li>
+                        <li><span>Gender -</span> Male</li>
+                        <li><span>Date of birth -</span> 25th Nov 2000</li>
+                        <li><span>Address -</span> Hooghly,West Bengal</li>
+                        <li><span>Pin -</span> 712148</li>
+                    </ul>
+                </div>
+                <div class="elementdetails" id="education">
+                    <ul>
+                        <li><span>10<sup>th</sup>Grade</span>
+                            <div class="elementlist">Sarangpur High School(H.S.) - 2016</div>
+                        </li>
+                        <li><span>12<sup>th</sup>Grade</span>
+                            <div class="elementlist">Sarangpur High School(H.S.) - 2018</div>
+                        </li>
+                        <li><span>B-TECH</span>
+                            <div class="elementlist">Hooghly Engineering and Technology Collage<br>in Mechanical
+                                Engineering - 2019-23</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="elementdetails" id="skills">
+                    <ul>
+                        <li>C</li>
+                        <li>Pytho<span>n</span></li>
+                        <li>Jav<span>a</span></li>
+                        <li>HTM<span>L</span></li>
+                        <li>CS<span>S</span></li>
+                        <li>Javaskrip<span>t</span></li>
+                        <li>OOP<span>S</span></li>
+                    </ul>
+                </div>
+                <div class="elementdetails" id="languages">
+                    <ul>
+                        <li><span>E</span>nglish</li>
+                        <li><span>B</span>engali</li>
+                        <li><span>H</span>indi</li>
+                    </ul>
+                </div>
+                <div class="elementdetails" id="hobbies">
+                    <ul>
+                        <li>Drawing</li>
+                        <li>Traveling</li>
+                        <li>Playing Cricket</li>
+                        <li><a href="https://www.youtube.com/@astrocorntv6123" target="_blank">Watching Movies</a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------Projects Section---------->
+    <section id="projects">
+        <div class="headtext container">
+            <h1><span>My</span> Work</h1>
+        </div>
+        <div class="projects container flex">
+            <div class="projectscard flex" style="background-image: url(Documents/asset\ 5.jpg);">
+                <div class="cardtext">
+                    <i class="fa-solid fa-staff-snake"></i>
+                    <h3>Snake Game </h3>
+                    <h5>An old retro style SnakeGame with colourful background created by Python</h5>
+                    <a href="https://github.com/ankan-chattopadhyay/Snake-Game" target="_blank" class="element"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projectscard flex" style="background-image: url(Documents/asset\ 6.jpg);">
+                <div class="cardtext">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Sign Up Page</h3>
+                    <h5>a responsive sign-up page created by me</h5>
+                    <a href="https://ankan-chattopadhyay.github.io/Sign-Up-Page/" target="_blank" class="element"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projectscard flex" style="background-image: url(Documents/asset\ 7.jpg);">
+                <div class="cardtext">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Github</h3>
+                    <h5>To checkout my other several works visit my Github channel by clicking below link</h5>
+                    <a href="https://github.com/ankan-chattopadhyay" target="_blank" class="element"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------Contact Section---------->
+    <section id="contact">
+        <div class="contact container flex">
+            <div class="contactleft flex">
+                <h1>Contact <span>Me</span></h1>
+                <div class="email flex">
+                    <a href="mailto:ankanchattopadhyay25@gmail.com" target="_blank"><i
+                            class="fa-solid fa-paper-plane"></i></a>
+                    <p>ankanchattopadhyay25@gmail.com</p>
+                </div>
+                <div class="number flex">
+                    <a href="tel:+919933534080" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <p>+919933534080</p>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/ankan.chatterjee.1865" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ankan-chattopadhyay-a92276246/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/name.is.ankan/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/ankan-chattopadhyay" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="resume">
+                    <a href="Documents/RESUME.pdf" target="_blank">Download my resume</a>
+                </div>
+            </div>
+            <div class="contactright flex">
+                <form>
+                    <p><input type="text" name="name" placeholder="Your Name" required></p>
+                    <p>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </p>
+                    <p>
+                        <textarea name="message" id="message" cols="60" rows="8" placeholder="Your Message"></textarea>
+                    </p>
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!----------JavaSkript Section---------->
+    <script>
+        var aboutelement = document.getElementsByClassName("aboutelement")
+        var elementdetails = document.getElementsByClassName("elementdetails");
+        function opentab(tabname) {
+            for (a of aboutelement) {
+                a.classList.remove("activelink")
+            }
+            for (e of elementdetails) {
+                e.classList.remove("activetab");
+            }
+
+            event.currentTarget.classList.add("activelink")
+            document.getElementById(tabname).classList.add("activetab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0";
+            sidemenu.style.transition = "0.3s ease-in-out"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-40%";
+        }
+    </script>
+
+</body>
+
+</html>

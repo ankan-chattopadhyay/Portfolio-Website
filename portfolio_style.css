@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:ital,wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+.container{
+    max-width: 1180px;
+    color: white;
+    font-size: 20px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-size: 30px;
+}
+span{
+    color: red;
+}
+.element{
+    color: whitesmoke;
+    transition: 0.3s ease-in-out;
+}
+.element:hover{
+    color: red;
+}
+
+/*Nav BAr Section*/
+.navbar{
+    width: 100%;
+    height: 100%;
+    margin-block: 10px;
+    justify-content: space-between;
+}
+.navlist ul{
+    list-style: none;
+    gap: 40px;
+}
+.navlist i{
+    display: none;
+}
+.navtoggle{
+    display: none;
+}
+
+/*Header Section*/
+.header{
+    width: 97%;
+    height: 80vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.338), rgb(0,0,0,0.9)),url(Documents/asset\ 3.jpg);
+    background-size: cover;
+    background-position: top;
+    box-shadow: 0 0 4px rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.header:hover{
+    box-shadow: 0 0 4px rgb(255, 255, 255);
+    background-position: bottom;
+}
+.header span{
+    font-size: 40px;
+}
+.header p{
+    padding-block: 5px;
+    color: aqua;
+}
+
+/*About Me Section*/
+.about{
+    align-items: flex-start;
+    min-height: 480px;
+    padding: 50px 20px;
+    gap: 50px;
+}
+.leftimg{
+    justify-content: center;
+}
+.leftimg img{
+    margin-top: 50px;
+    width: 400px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.leftimg img:hover{
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.righttext p{
+    padding-block: 20px;
+    padding-right: 50px;
+}
+.aboutlist{
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.aboutelement{
+    color: white;
+    padding: 3px 12px;
+    border: 1px solid red;
+    box-shadow: 0 0 5px red;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+.aboutelement.activelink{
+    background-color: red;
+}
+.aboutelement:hover{
+    background-color: red;
+}
+.elementlist{
+    font-size: 16px;
+    padding-block: 5px;
+}
+.elementdetails{
+    display: none;
+    padding-top: 15px;
+    padding-left: 17px;
+}
+.elementdetails li{
+    padding-bottom: 5px;
+}
+.elementdetails a{
+    color: white;
+}
+.elementdetails.activetab{
+    display: block;
+}
+
+/*Project Section*/
+.headtext{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.projects{
+    min-height:400px ;
+    justify-content: space-around;
+    padding: 0px 50px;
+}
+.projectscard div{
+    color: white;
+    padding: 10px;   
+}
+.projectscard i{
+    padding: 20px;
+}
+h5{
+    padding-block: 10px 50px;
+}
+.projectscard{
+    width: 25%;
+    min-height: 300px;
+    border-radius: 8px;
+    align-items: end;
+    text-align: center;
+    background-size: cover;
+}
+.cardtext{
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.096),rgba(0, 0, 0, 0.881));
+    transition: 0.3s ease-in-out;
+}
+.cardtext:hover{
+    padding-bottom: 70px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+/* Contact Section  */
+.contact{
+    padding-block: 50px;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.contactleft{
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 15px;
+    gap: 15px;
+}
+.contactleft h1{
+    font-size: 50px;
+}
+.contactleft i{
+    color: red;
+    padding: 10px;
+    font-size: 20px;
+}
+.contactleft a{
+    color: white;
+}
+.social i:hover{
+    transform: translateY(-5px);
+}
+.resume{
+    border: 1px solid red;
+    background-color: red;
+    margin-top: 35px;
+    padding: 8px;
+    border-radius: 5px;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.resume:hover{
+    background-color: darkviolet;
+    border-radius: 14px;
+}
+.contactright{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contactright input,textarea{
+    color: aqua;
+    background-color: #262626;
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 6px;
+}
+.btn{
+    color: white;
+    background-color: black;
+    border: 1px solid red;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: red;
+}
